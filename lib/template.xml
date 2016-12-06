@@ -13,9 +13,10 @@
         <Rule>
             <Filter>[mapnik::geometry_type]=point and [marker-path]</Filter>
             <PointSymbolizer
-              file="[marker-path]"
-              allow-overlap="true"
-              ignore-placement="true"
+                    file="[marker-path]"
+                    allow-overlap="true"
+                    ignore-placement="true"
+                    transform="rotate([marker-rotate]) scale([marker-scale])"
             />
         </Rule>
     </Style>
